@@ -133,6 +133,12 @@
     <Compile Include="Usuario.Designer.cs">
       <DependentUpon>Usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="V3P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="V3P.Designer.cs">
+      <DependentUpon>V3P.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Articulo.resx">
       <DependentUpon>Articulo.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Usuario.resx">
       <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V3P.resx">
+      <DependentUpon>V3P.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="FacturacionDataSet.xsc">
       <DependentUpon>FacturacionDataSet.xsd</DependentUpon>
