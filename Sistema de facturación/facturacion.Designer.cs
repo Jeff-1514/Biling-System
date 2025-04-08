@@ -31,8 +31,8 @@ namespace Sistema_de_facturación
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(facturacion));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalirF = new System.Windows.Forms.PictureBox();
             this.btnImprimirF = new System.Windows.Forms.PictureBox();
             this.btnEliminarF = new System.Windows.Forms.PictureBox();
@@ -118,6 +118,7 @@ namespace Sistema_de_facturación
             this.btnImprimirF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnImprimirF.TabIndex = 73;
             this.btnImprimirF.TabStop = false;
+            this.btnImprimirF.Click += new System.EventHandler(this.btnImprimirF_Click);
             // 
             // btnEliminarF
             // 
@@ -327,8 +328,8 @@ namespace Sistema_de_facturación
             // 
             // DgvFacturacion
             // 
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.DgvFacturacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.DgvFacturacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvFacturacion.AutoGenerateColumns = false;
             this.DgvFacturacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvFacturacion.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -340,14 +341,14 @@ namespace Sistema_de_facturación
             this.canartDataGridViewTextBoxColumn,
             this.sub_tot});
             this.DgvFacturacion.DataSource = this.temdetallefacturaBindingSource;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvFacturacion.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvFacturacion.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvFacturacion.Location = new System.Drawing.Point(608, 7);
             this.DgvFacturacion.Name = "DgvFacturacion";
             this.DgvFacturacion.RowHeadersWidth = 51;
@@ -714,7 +715,6 @@ namespace Sistema_de_facturación
         private System.Windows.Forms.TextBox txtboxCliente;
         private System.Windows.Forms.TextBox txtboxNombre;
         private System.Windows.Forms.TextBox txtboxFecha;
-        private System.Windows.Forms.TextBox txtboxNoFac;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -754,5 +754,6 @@ namespace Sistema_de_facturación
         private System.Windows.Forms.DataGridViewTextBoxColumn canartDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sub_tot;
         private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.TextBox txtboxNoFac;
     }
 }

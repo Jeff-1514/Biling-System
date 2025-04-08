@@ -487,11 +487,12 @@ namespace Sistema_de_facturación
                     txtboxArticulo.Focus();
                     timer1.Enabled = true;
                     btnGuardarF.Enabled = true;
+                    btnImprimirF.Enabled = true;
 
 
                 }
             }
-            Eliminar_Grid();
+        Eliminar_Grid();
         }
         private void Articulo_TextChanged(object sender, EventArgs e)
         {
@@ -558,6 +559,13 @@ namespace Sistema_de_facturación
         {
             Articulo form = new Articulo();
             form.Show();
+        }
+
+        private void btnImprimirF_Click(object sender, EventArgs e)
+        {
+            F3P fn = new F3P();
+            fn.numero.Text = this.txtboxNoFac.Text;
+            fn.ShowDialog();
         }
     }
 }
